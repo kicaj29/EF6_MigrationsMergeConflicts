@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity.Migrations;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,13 @@ namespace MigrationConflicts
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var configuration = new Migrations.Configuration();
+            var migrator = new DbMigrator(configuration);
+            migrator.Update();
         }
     }
 }
