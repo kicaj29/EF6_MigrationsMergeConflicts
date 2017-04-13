@@ -9,6 +9,11 @@ namespace MigrationConflicts
 {
     public class BlogContext : DbContext
     {
+        public BlogContext():base(@"Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=BlogContext;Integrated Security=True")
+        {
+
+        }
+
         public DbSet<Blog> Blogs { get; set; }
     }
 }
