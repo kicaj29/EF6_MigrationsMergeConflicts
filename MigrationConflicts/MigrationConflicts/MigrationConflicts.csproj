@@ -67,6 +67,10 @@
     <Compile Include="Migrations\201704130749020_InitialCreate.Designer.cs">
       <DependentUpon>201704130749020_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704130856177_dev2_addReaders.cs" />
+    <Compile Include="Migrations\201704130856177_dev2_addReaders.Designer.cs">
+      <DependentUpon>201704130856177_dev2_addReaders.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201704130854014_dev1_addRating.cs" />
     <Compile Include="Migrations\201704130854014_dev1_addRating.Designer.cs">
       <DependentUpon>201704130854014_dev1_addRating.cs</DependentUpon>
@@ -79,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704130749020_InitialCreate.resx">
       <DependentUpon>201704130749020_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704130856177_dev2_addReaders.resx">
+      <DependentUpon>201704130856177_dev2_addReaders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704130854014_dev1_addRating.resx">
       <DependentUpon>201704130854014_dev1_addRating.cs</DependentUpon>

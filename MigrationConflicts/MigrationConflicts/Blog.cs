@@ -13,6 +13,8 @@ namespace MigrationConflicts
 
         public string Url { get; set; }
 
+        public int Readers { get; set; }
+
         public int Rating { get; set; }
 
 
