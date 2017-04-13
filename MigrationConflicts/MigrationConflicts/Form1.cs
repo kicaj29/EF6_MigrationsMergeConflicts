@@ -24,5 +24,28 @@ namespace MigrationConflicts
             var migrator = new DbMigrator(configuration);
             migrator.Update();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (var db = new BlogContext())
+            {
+
+                //Exception message: The model backing the 'BlogContext' context has changed since the database was created.
+                //Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+                foreach (var blog in db.Blogs)
+                {
+                    MessageBox.Show(blog.Name);
+                }
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            using (var db = new BlogContext())
+            {
+                db.Blogs.Add(new Blog() { Name = "blog1", Rating = 23, Readers = 43 });
+                db.SaveChanges();
+            }
+        }
     }
 }

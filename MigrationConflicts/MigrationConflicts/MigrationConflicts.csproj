@@ -75,6 +75,10 @@
     <Compile Include="Migrations\201704130854014_dev1_addRating.Designer.cs">
       <DependentUpon>201704130854014_dev1_addRating.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704130933215_Merge.cs" />
+    <Compile Include="Migrations\201704130933215_Merge.Designer.cs">
+      <DependentUpon>201704130933215_Merge.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704130854014_dev1_addRating.resx">
       <DependentUpon>201704130854014_dev1_addRating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704130933215_Merge.resx">
+      <DependentUpon>201704130933215_Merge.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
